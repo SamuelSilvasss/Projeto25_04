@@ -20,7 +20,7 @@ $password = $_POST['password'];
 
 // Verificar as credenciais
 if (verificarCredenciais($username, $password, $usuariosRegistrados)) {
-    // Credenciais corretas, redirecionar para a página de sucesso
+    // Credenciais corretas, redirecionar para a página de acesso
     header('Location: acesso.php');
     exit;
 } else {
