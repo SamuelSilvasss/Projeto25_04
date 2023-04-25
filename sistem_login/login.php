@@ -5,7 +5,7 @@ $usuariosRegistrados = array(
 );
 
 
-function verificarCredenciais($username, $password, $usuariosRegistrados) {
+function verificarRegistro($username, $password, $usuariosRegistrados) {
     foreach ($usuariosRegistrados as $usuario) {
         if ($usuario['username'] === $username && $usuario['password'] === $password) {
             return true;
@@ -18,13 +18,13 @@ function verificarCredenciais($username, $password, $usuariosRegistrados) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Verificar as credenciais
-if (verificarCredenciais($username, $password, $usuariosRegistrados)) {
-    // Credenciais corretas, vai redirecionar para a página de acesso
+// Verificar ao Registro
+if (verificarRegistro($username, $password, $usuariosRegistrados)) {
+    // Registro correto, vai redirecionar para a página de acesso
     header('Location: acesso.php');
     exit;
 } else {
-    // Credenciais incorretas, vai exibir uma mensagem de erro
+    // Registro incorreto, vai exibir uma mensagem de erro
     echo 'Erro ao tentar o login na sua conta, nome de usuário ou senha incorreta.';
 }
 ?>
