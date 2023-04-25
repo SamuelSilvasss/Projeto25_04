@@ -1,12 +1,12 @@
 <?php
 
-$usuariosRegistrados = array(
+$usuariosCadastrados = array(
     array('username' => 'Samuca1', 'password' => 'paçoca123'),
 );
 
 
-function verificarRegistro($username, $password, $usuariosRegistrados) {
-    foreach ($usuariosRegistrados as $usuario) {
+function verificarRegistro($username, $password, $usuariosCadastrados) {
+    foreach ($usuariosCadastrados as $usuario) {
         if ($usuario['username'] === $username && $usuario['password'] === $password) {
             return true;
         }
@@ -19,7 +19,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Verificar ao Registro
-if (verificarRegistro($username, $password, $usuariosRegistrados)) {
+if (verificarRegistro($username, $password, $usuariosCadastrados)) {
     // Registro correto, vai redirecionar para a página de acesso
     header('Location: acesso.php');
     exit;
