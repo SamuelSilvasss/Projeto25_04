@@ -1,10 +1,10 @@
 <?php
-// Dados de usuários registrados
+
 $usuariosRegistrados = array(
     array('username' => 'Samuca1', 'password' => 'paçoca123'),
 );
 
-// Função para verificar se as credenciais são válidas
+
 function verificarCredenciais($username, $password, $usuariosRegistrados) {
     foreach ($usuariosRegistrados as $usuario) {
         if ($usuario['username'] === $username && $usuario['password'] === $password) {
@@ -24,7 +24,7 @@ if (verificarCredenciais($username, $password, $usuariosRegistrados)) {
     header('Location: acesso.php');
     exit;
 } else {
-    // Credenciais incorretas, exibir mensagem de erro
+    // Credenciais incorretas, vai exibir uma mensagem de erro
     echo 'Erro ao tentar o login na sua conta, nome de usuário ou senha incorreta.';
 }
 ?>
