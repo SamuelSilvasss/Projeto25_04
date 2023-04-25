@@ -14,7 +14,7 @@ function verificarCredenciais($username, $password, $usuariosRegistrados) {
     return false;
 }
 
-// Obter os valores do formulário
+//valores do formulário
 $username = $_POST['username'];
 $password = $_POST['password'];
 
