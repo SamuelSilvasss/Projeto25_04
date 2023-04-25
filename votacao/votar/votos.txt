@@ -1,0 +1,1 @@
+a:3:{s:6:"opcao1";i:1;s:6:"opcao2";i:1;s:6:"opcao3";i:1;}
