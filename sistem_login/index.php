@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sistema de Login</title>
+    <title>Sistem Login</title>
 </head>
 <body>
     <h1>Login</h1>
