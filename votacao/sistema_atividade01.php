@@ -34,14 +34,11 @@
             "opcao3" => 0
         );
 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
             if (isset($_POST["opcao"])) {
                 $opcao = $_POST["opcao"];
 
                 $votos[$opcao]++;
             }
-        }
 
         echo "<h1>Resultados da Votação</h1>";
 
